@@ -1,7 +1,5 @@
 # python_note
 python相关笔记
-# !/usr/bin/python
-# -*- coding: utf-8 -*-
 
 #变量赋值
 age1 = 18
@@ -68,3 +66,93 @@ if name == 'meet':
         print("年龄输入错误！")
 else:
     print("名字输入错误")
+
+
+#while 循环
+#为真一直执行，会变成死循环
+while True:
+    print('I love python')
+#有判断条件
+flage = True
+str_num = input("请输入要比较的数字")
+print("进入循环")
+while flage:
+    if "3" > str_num :
+        print("在执行循环")
+    else:
+        print("要终止循环")
+        flage = False
+print("退出循环")
+
+
+#使用while计数
+count = 0
+while True:
+    count = count +1
+    print(count)
+#控制while循环的次数
+count = 0
+while count < 100:
+    count = count+1
+    print(count)
+
+#break 让循环终止
+num = 1
+while num < 6:
+    print(num)
+    num += 1
+    break
+    print("end")
+
+
+#coutinue 退出当前循环，继续下一次循环
+num = 1
+while num <6:
+    print(num)
+    num+=1
+    continue
+    print("end")
+
+#while else 使用
+# 循环一
+while True:
+    if 3 > 2:
+        print('你好')
+        break
+else:
+    print('不好')
+
+# 循环二
+while True:
+    if 3 > 2:
+        print('你好')
+print('不好')
+
+#字符串类型
+name = input('请输入姓名:')
+age = input('请输入年龄:')
+job = input('请输入职业:')
+hobby = input('请输入爱好:')
+msg = '''
+------------ info of Alex Li ----------
+Name  : %s
+Age   : %s 
+job   : %s 
+Hobbie: %s 
+------------- end ----------------
+
+'''
+print(msg%(name,age,job,hobby))
+
+
+#数字类型
+name = input('>>>')
+s1 = '1234%d'%int(name)
+s2 = '1234%i'%int(name)
+print(s1)
+print(s2)
+
+#转义
+num = input('>>>')
+s= '目前学习进度:%s%%'%num
+print(s)
