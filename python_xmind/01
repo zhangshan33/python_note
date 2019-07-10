@@ -1,1 +1,176 @@
-01
+第一周笔记
+	Typora 手册
+		标题
+			一级标题：#
+			二级标题：##
+			三级标题：###
+			四级标题：####
+			五级标题：#####
+			六级标题：######
+		内容
+			有序内容：1.+ tab键
+			无序内容：-号 + tab键
+		代码块
+			``` 选择语言 回车
+		图片
+			复制粘贴
+		表格
+			option+ command +T
+		文字属性
+			加粗：**文字**
+			倾斜：*文字*
+			加粗倾斜：***文字***
+		幂赋值运算符
+			**--
+		转义符
+			\_\_文字\_\
+	计算机基础
+		必备
+			主板
+			cpu
+			硬盘
+			电源
+			内存
+		操作系统
+			win7
+			win8
+			win10
+			Mac
+			Linux
+		应用程序
+			操作系统上安装的软件
+	Git & 码云
+		注册码云
+			官网：https://gitee.com
+		git 安装
+			官网：https://git-scm.com
+		git 基本命令
+			git init 创建仓库
+			git add . 上传全部文件
+			git add filename  上传文件
+			git commit -m "第一次提交"  提交备注
+			git remote add origin 在本地和远程仓库进行添加
+			git push -u origin master 提交到master 分支
+			git push -u origin master -f 强制提交
+	第一章
+		python简介
+			python 历史
+			python 2与python 3的区别
+				python 2 源码不统一 有重复功能代码
+				python 3 源码统一 无重复功能代码
+			python 语言
+				解释性编程语言
+			python 种类
+				cpython
+				jython
+				iron python
+				布尔型：bool
+		python安装
+			官网：https://www.python.org
+		pycharm安装
+			官网：http://www.jetbrains.com
+		python入门
+			变量
+				命名规则
+					1、由字母、数字和下划线组成
+					2、不能由数字开头
+					3、不能使用python关键字
+					4、不能使用中文和拼音
+					5、区分大小写
+					6、具有可描述性意义
+					7、推荐字体：驼峰体和下划体
+			常量
+				变量名全部大写，在配置文件中使用
+			注释
+				单行 #
+				多行：
+“ 注释 ”
+‘’‘ 注释 ’‘’
+“”“ 注释 ”“”
+			基本数据类型
+				整型：int
+					用于数字计算和比较
+				字符串型：str
+					包含汉字和字母
+						用于字符串拼接
+						字符串和数字做相乘
+				布尔型：bool
+					True：真
+					False：假
+			用户交互
+				input()
+内容都是字符串类型
+			流程控制语句
+				基本结构
+					if 条件 冒号
+缩进 结果
+				流程语句
+					单if
+					二选一 if else
+					多选一个或者零个 if elif elif elif
+					多选一个 if elif else
+					多选或者零 if if if
+					嵌套 if if if
+			其他知识点
+				and 和 and 前后都为真才为真
+				查看类型：type()
+				字符串转成整型：int("5")
+				整型转换成字符串型：str(5)
+				== 判断前后是否相等
+	第二章
+		while 循环
+			基本结构 
+				while  条件  冒号
+缩进  循环体
+			终止循环
+				break：终止当前循环
+				改变条件：自定义修改控制执行次数
+			关键字
+				break：终止当前循环
+				continue：伪装成循环体的最后一行代码
+			while else 
+				while 成立执行循环
+否则 执行else
+		字符串格式化
+			占位符 %
+				字符串类型：%s
+				数字类型：%d
+			转义 %%
+				转义成普通的百分号
+			连接符
+				变量名%()
+				f"{变量名}{字符串}“（3.6 及以上版本才能用）
+		运算符
+			算数运算符
+				+ - * ／ ／／ **  %
+			比较运算符
+				< > == <= >= !=
+			赋值运算符
+				= += -= *= /= //= **== %=
+			逻辑运算符
+				and or  not
+			成员运算符
+				in not or
+		编码
+			ascii
+				美国发明，不支持中文
+			gbk
+				英文 8位 1字节
+中文16位 2字节
+			unicode
+				万国码：
+英文16位 2字节
+中文32位 4字节
+			utf-8
+				英文8位 1字节
+欧洲16位 2字节
+亚洲24位 3字节
+			字节和位
+				1bytes = 8bit
+			单位转换
+				1字节 = 8位
+1Bytes = 8bit
+1024Bytes = 1KB
+1024KB = 1MB
+1024MB = 1GB
+1024GB = 1TB
